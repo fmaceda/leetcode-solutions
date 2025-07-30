@@ -13,33 +13,39 @@ public class Solution
 {
   public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
   {
-    ListNode solution = new();
-    ListNode currentNode = solution;
+    var node1 = l1;
+    var node2 = l2;
+    var head = l1;
 
+    int sum = 0;
     int remainder = 0;
 
-    while (l1 != null || l2 != null || remainder != 0)
+    while (node1 != null && node2 != null)
     {
-      int value1 = l1 != null ? l1.val : 0;
-      int value2 = l2 != null ? l2.val : 0;
+      sum = (node1.val + node2.val + remainder) % 10;
+      remainder = (node1.val + node2.val + remainder) / 10;
 
-      int total = (value1 + value2 + remainder) % 10;
-      remainder = (value1 + value2 + remainder) / 10;
+      node1.val = sum;
 
-      currentNode.next = new(total, null);
-      currentNode = currentNode.next;
-
-      if (l1 != null)
+      if (node1.next == null && node2.next == null)
       {
-        l1 = l1.next;
+        break;
+      }
+      else
+      {
+        node1.next = node1.next ?? new ListNode(0);
+        node2.next = node2.next ?? new ListNode(0);
       }
 
-      if (l2 != null)
-      {
-        l2 = l2.next;
-      }
+      node1 = node1.next;
+      node2 = node2.next;
     }
 
-    return solution.next;
+    if (remainder > 0)
+    {
+      node1.next = new ListNode(remainder);
+    }
+
+    return head;
   }
 }
