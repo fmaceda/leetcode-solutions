@@ -78,3 +78,4 @@
 | 1672 | [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) | [C#](./Categories/Algorithms/CSharp/1672-Richest-Customer-Wealth.cs) | Easy | Array, Matrix, Weekly Contest 217 |
 | 1991 | [Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array/) | [C#](./Categories/Algorithms/CSharp/1991-Find-the-Middle-Index-in-Array.cs) | Easy | Array, Prefix Sum, Biweekly Contest 60 |
 | 2236 | [Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/) | [C#](./Categories/Algorithms/CSharp/2236-Root-Equals-Sum-of-Children.cs) | Easy | Tree, Binary Tree |
+| 3477 | [Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii) | [C#](./Categories/Algorithms/CSharp/3477-Fruits-Into-Baskets-II.cs) | Easy | Array, Binary Search, Segment Tree, Simulation, Ordered Set, Weekly Contest 440 |
