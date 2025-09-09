@@ -12,6 +12,7 @@
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [C#](./Categories/Algorithms/CSharp/19-Remove-Nth-Node-From-End-of-List.cs) | Medium | Linked List, Two Pointers |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [C#](./Categories/Algorithms/CSharp/20-Valid-Parentheses.cs) | Easy | String, Stack |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [C#](./Categories/Algorithms/CSharp/21-Merge-Two-Sorted-Lists.cs) | Easy | Linked List, Recursion |
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [C#](./Categories/Algorithms/CSharp/24-Swap-Nodes-in-Pairs.cs) | Medium |Linked List, Recursion |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [C#](./Categories/Algorithms/CSharp/26-Remove-Duplicates-from-Sorted-Array.cs) | Easy | Array, Two Pointers |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) |[C#](./Categories/Algorithms/CSharp/27-Remove-Element.cs) | Easy | Array, Two Pointers |
 | 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | [C#](./Categories/Algorithms/CSharp/28-Find-the-Index-of-the-First-Occurrence-in-a-String.cs) | Easy | Two Pointers, String, String Matching |
@@ -25,8 +26,11 @@
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | [C#](./Categories/Algorithms/CSharp/66-Plus-One.cs) | Easy | Array, Math |
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | [C#](./Categories/Algorithms/CSharp/67-Add-Binary.cs) | Easy | Math, String, Bit Manipulation, Simulation |
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | [C#](./Categories/Algorithms/CSharp/69-Sqrt(x).cs) | Easy | Math, Binary Search |
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [C#](./Categories/Algorithms/CSharp/70-Climbing-Stairs.cs) | Easy | Math, Dynamic Programming, Memoization |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [C#](./Categories/Algorithms/CSharp/88-Merge-Sorted-Array.cs) | Easy | Array, Two Pointers, Sorting |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [C#](./Categories/Algorithms/CSharp/94-Binary-Tree-Inorder-Traversal.cs) | Easy | Stack, Tree, Depth-First Search, Binary Tree |
+| 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | [C#](./Categories/Algorithms/CSharp/95-Unique-Binary-Search-Trees%20II.cs) | Medium | Dynamic Programming, Backtracking, Tree, Binary Search Tree, Binary Tree |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [C#](./Categories/Algorithms/CSharp/104-Maximum-Depth-of-Binary-Tree.cs) | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | [C#](./Categories/Algorithms/CSharp/118-Pascal-s-Triangle.cs) | Easy | Array, Dynamic Programming |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) | [C#](./Categories/Algorithms/CSharp/119-Pascal-s-Triangle-II.cs) | Easy | Array, Dynamic Programming |
 | 133 | [Clone Graph](https://leetcode.com/problems/clone-graph/)| [C#](./Categories/Algorithms/CSharp/133-Clone-Graph.cs) | Medium | Hash Table, Depth-First Search, Breadth-First Search, Graph |
@@ -78,12 +82,14 @@
 | 454 | [4Sum II](https://leetcode.com/problems/4sum-ii/) | [C#](./Categories/Algorithms/CSharp/454-4Sum-II.cs) | Medium |Array, Hash Table |
 | 485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | [C#](./Categories/Algorithms/CSharp/485-Max-Consecutive-Ones.cs) | Easy | Array |
 | 498 | [Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse/) | [C#](./Categories/Algorithms/CSharp/498-Diagonal-Traverse.cs) | Medium | Array, Matrix, Simulation |
+| 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | [C#](./Categories/Algorithms/CSharp/509-Fibonacci-Number.cs) | Easy | Math, Dynamic Programming, Recursion, Memoization |
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | [C#](./Categories/Algorithms/CSharp/542-01-Matrix.cs) | Medium | Array, Dynamic Programming, Breadth-First Search, Matrix |
 | 557 | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) | [C#](./Categories/Algorithms/CSharp/557-Reverse-Words-in-a-String%20III.cs) | Easy | Two Pointers, String |
 | 599 | [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) | [C#](./Categories/Algorithms/CSharp/599-Minimum-Index-Sum-of-Two-Lists.cs) | Easy | Array, Hash Table, String |
 | 622 | [Design Circular Queue](https://leetcode.com/problems/design-circular-queue/) | [C#](./Categories/Algorithms/CSharp/622-Design-Circular-Queue.cs) | Medium | Array, Linked List, Design, Queue |
 | 652 | [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/) | [C#](./Categories/Algorithms/CSharp/652-Find-Duplicate-Subtrees.cs) | Medium | Hash Table, Tree, Depth-First Search, Binary Tree |
 | 658 | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/) | [C#](./Categories/Algorithms/CSharp/658-Find-K-Closest-Elements.cs) | Medium | Array, Two Pointers, Binary Search, Sliding Window, Sorting, Heap (Priority Queue) |
+| 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | [C#](./Categories/Algorithms/CSharp/700-Search-in-a-Binary-Search-Tree.cs) | Easy | Tree, Binary Search Tree, Binary Tree |
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | [C#](./Categories/Algorithms/CSharp/704-Binary-Search.cs) | Easy | Array, Binary Search |
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | [C#](./Categories/Algorithms/CSharp/705-Design-HashSet.cs) | Easy | Array, Hash Table, Linked List, Design, Hash Function |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap/) | [C#](./Categories/Algorithms/CSharp/706-Design-HashMap.cs) | Easy | Array, Hash Table, Linked List, Design, Hash Function |
@@ -96,6 +102,7 @@
 | 747 | [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | [C#](./Categories/Algorithms/CSharp/747-Largest-Number-At-Least-Twice-of-Others.cs) | Easy | Array, Sorting, Weekly Contest 64 |
 | 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock/) | [C#](./Categories/Algorithms/CSharp/752-Open-the-Lock.cs) | Medium | Array, Hash Table, String, Breadth-First Search, Weekly Contest 64 |
 | 771 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [C#](./Categories/Algorithms/CSharp/771-Jewels-and-Stones.cs) | Easy | Hash Table, String, Weekly Contest 69 |
+| 779 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/) | [C#](./Categories/Algorithms/CSharp/779-K-th-Symbol-in-Grammar.cs) | Medium | Math, Bit Manipulation, Recursion, Weekly Contest 70 |
 | 841 | [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/) | [C#](./Categories/Algorithms/CSharp/841-Keys-and-Rooms.cs) | Medium | Depth-First Search, Breadth-First Search, Graph, Weekly Contest 86 |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list) | [C#](./Categories/Algorithms/CSharp/876-Middle-of-the-Linked-List.cs) | Easy | Linked List, Two Pointers, Weekly Contest 95 |
 | 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | [C#](./Categories/Algorithms/CSharp/905-Sort-Array-By-Parity.cs) | Easy | Array, Two Pointers, Sorting, Weekly Contest 102 |

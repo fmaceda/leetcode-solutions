@@ -13,56 +13,28 @@ public class Solution
 {
   public ListNode MergeTwoLists(ListNode list1, ListNode list2)
   {
-    if (list1 == null)
-    {
-      return list2;
-    }
-
-    if (list2 == null)
+    if (list1 != null && list2 == null)
     {
       return list1;
     }
-
-    var node1 = list1;
-    var node2 = list2;
-    ListNode node3 = null;
-    ListNode mergedNode = null;
-    ListNode tmpNode = null;
-
-    while (node1 != null && node2 != null)
+    else if (list1 == null && list2 != null)
     {
-      if (node1.val < node2.val)
-      {
-        tmpNode = node1;
-        node1 = node1.next;
-      }
-      else
-      {
-        tmpNode = node2;
-        node2 = node2.next;
-      }
-
-      if (mergedNode != null)
-      {
-        mergedNode.next = tmpNode;
-        mergedNode = mergedNode.next;
-      }
-      else
-      {
-        mergedNode = tmpNode;
-        node3 = tmpNode;
-      }
+      return list2;
+    }
+    else if (list1 == null && list2 == null)
+    {
+      return null;
     }
 
-    tmpNode = node1 ?? node2;
-
-    while (tmpNode != null)
+    if (list1.val < list2.val)
     {
-      mergedNode.next = tmpNode;
-      mergedNode = mergedNode.next;
-      tmpNode = tmpNode.next;
+      list1.next = MergeTwoLists(list1.next, list2);
+      return list1;
     }
-
-    return node3;
+    else
+    {
+      list2.next = MergeTwoLists(list1, list2.next);
+      return list2;
+    }
   }
 }

@@ -2,23 +2,25 @@ public class Solution
 {
   public double MyPow(double x, int n)
   {
-    long exp = Math.Abs((long)n);
-    double result = 1.0;
+    long exp = n;
 
-    while (exp > 0)
+    if (n < 0)
     {
-      if (exp % 2 == 0)
-      {
-        x *= x;
-        exp /= 2;
-      }
-      else
-      {
-        result *= x;
-        exp--;
-      }
+      return 1.0 / PosPow(x, (int)-exp);
     }
 
-    return n > 0 ? result : 1.0 / result;
+    return PosPow(x, (int)exp);
+  }
+
+  public double PosPow(double x, int n)
+  {
+    if (n == 0)
+    {
+      return 1.0;
+    }
+
+    var half = PosPow(x, n / 2);
+
+    return n % 2 == 0 ? half * half : x * half * half;
   }
 }

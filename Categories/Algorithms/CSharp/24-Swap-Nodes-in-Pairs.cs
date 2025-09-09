@@ -11,18 +11,17 @@
  */
 public class Solution
 {
-  public ListNode ReverseList(ListNode head)
+  public ListNode SwapPairs(ListNode head)
   {
     if (head == null || head.next == null)
     {
       return head;
     }
 
-    var nextNode = ReverseList(head.next);
+    var temp = head.next;
+    head.next = SwapPairs(head.next.next);
+    temp.next = head;
 
-    head.next.next = head;
-    head.next = null;
-
-    return nextNode;
+    return temp;
   }
 }
