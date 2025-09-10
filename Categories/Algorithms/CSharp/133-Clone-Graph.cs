@@ -23,6 +23,24 @@ public class Node {
 
 public class Solution
 {
+  public Node CloneGraph(Node node)
+  {
+    if (node == null)
+    {
+      return null;
+    }
+
+    var cloned = new Node(node.val);
+    var visited = new HashSet<int>();
+    var mapping = new Dictionary<int, Node>();
+
+    mapping.Add(1, cloned);
+
+    Traverse(node, cloned, visited, mapping);
+
+    return cloned;
+  }
+
   public void Traverse(Node original, Node copy, HashSet<int> visited, Dictionary<int, Node> mapping)
   {
     visited.Add(original.val);
@@ -48,23 +66,5 @@ public class Solution
         mapping[nodeVal].neighbors.Add(copy);
       }
     }
-  }
-
-  public Node CloneGraph(Node node)
-  {
-    if (node == null)
-    {
-      return null;
-    }
-
-    var cloned = new Node(node.val);
-    var visited = new HashSet<int>();
-    var mapping = new Dictionary<int, Node>();
-
-    mapping.Add(1, cloned);
-
-    Traverse(node, cloned, visited, mapping);
-
-    return cloned;
   }
 }

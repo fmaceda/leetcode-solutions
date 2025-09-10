@@ -13,24 +13,25 @@
  */
 public class Solution
 {
-  public IList<int> InorderTraversal(TreeNode root)
-  {
-    var inOrder = new List<int>();
-
-    Traverse(root, inOrder);
-
-    return inOrder;
-  }
-  
-  void Traverse(TreeNode node, IList<int> inOrder)
+  public void Traverse(TreeNode node, IList<int> preOrder)
   {
     if (node == null)
     {
       return;
     }
 
-    Traverse(node.left, inOrder);
-    inOrder.Add(node.val);
-    Traverse(node.right, inOrder);
+    preOrder.Add(node.val);
+
+    Traverse(node.left, preOrder);
+    Traverse(node.right, preOrder);
+  }
+
+  public IList<int> PreorderTraversal(TreeNode root)
+  {
+    var preOrder = new List<int>();
+
+    Traverse(root, preOrder);
+
+    return preOrder;
   }
 }

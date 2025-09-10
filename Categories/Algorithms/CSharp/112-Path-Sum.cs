@@ -13,24 +13,18 @@
  */
 public class Solution
 {
-  public IList<int> InorderTraversal(TreeNode root)
+  public bool HasPathSum(TreeNode root, int targetSum)
   {
-    var inOrder = new List<int>();
-
-    Traverse(root, inOrder);
-
-    return inOrder;
-  }
-  
-  void Traverse(TreeNode node, IList<int> inOrder)
-  {
-    if (node == null)
+    if (root == null)
     {
-      return;
+      return false;
     }
 
-    Traverse(node.left, inOrder);
-    inOrder.Add(node.val);
-    Traverse(node.right, inOrder);
+    if (root.left == null && root.right == null)
+    {
+      return targetSum == root.val;
+    }
+
+    return HasPathSum(root.left, targetSum - root.val) || HasPathSum(root.right, targetSum - root.val);
   }
 }
